@@ -20,7 +20,7 @@ fun DataApp(
 ){
     Scaffold { isiRuang->
         NavHost(
-            NavController = navController,
+            navController = navController,
             startDestination = Navigasi.Formulirku.name,
 
             modifier = Modifier.padding( isiRuang )){
