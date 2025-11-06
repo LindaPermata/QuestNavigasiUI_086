@@ -1,5 +1,6 @@
 package com.example.questnavigasiui_086
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -14,14 +15,15 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.questnavigasiui_086.ui.theme.QuestNavigasiUI_086Theme
 
 class MainActivity : ComponentActivity() {
+    @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
             QuestNavigasiUI_086Theme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                Scaffold(modifier = Modifier.fillMaxSize()) {
                     DataApp(
-                        modifier = Modifier.padding(innerPadding)
+                        modifier = Modifier
                     )
                 }
             }
