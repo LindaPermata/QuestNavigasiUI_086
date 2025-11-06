@@ -33,7 +33,7 @@ import com.example.questnavigasiui_086.R
 @Composable
 fun FormIsian(
     jenisK:List<String> = listOf("Laki-laki","Perempuan"),
-    onSubmitBtnClick:() -> Unit,
+    OnSubmitBtnClick:() -> Unit,
 ){
     Scaffold(modifier = Modifier,
         {
